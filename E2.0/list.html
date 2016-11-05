@@ -1,0 +1,974 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>商品列表</title>
+	<link rel="stylesheet"  href="css/reset.css"/>
+	<link rel="stylesheet"  href="css/list.css"/>
+	<script src="js/jquery-1.11.3.js"></script>
+	<script src="js/jquery.pagination.js"></script>	
+	<script src="js/jquery.cookie.js"></script>
+	
+
+</head>
+<body>
+ <div id="head"/></div>
+<div id ="lt_body">
+	<!--nav-->
+	<div class="all_nav">
+		 <div class="pet_nav">
+		 	  <div class="onav_cont">
+		 	  	  <span class="c666">
+		 	  	  	  狗狗
+		 	  	  	 <em class="gnum">19278</em>
+		 	  	  </span>
+		 	  	  <b></b>
+		 	  	  <ul>
+		 	  	  	  <li>
+		 	  	  	  	  <a herf="#">狗狗</a>
+		 	  	  	  	  <em class="gnum">19278</em>
+		 	  	  	  </li>
+		 	  	  	  <li>
+		 	  	  	  	  <a herf="#">猫猫</a>
+		 	  	  	  	  <em class="gnum">8214</em>
+		 	  	  	  </li>
+		 	  	  </ul>
+		 	  </div>
+		 	  <label></label>
+		 	  <div class="onav_cont">
+		 	  	  <span class="c666">
+		 	  	  	  狗狗主粮
+		 	  	  	 <em class="gnum">2024</em>
+		 	  	  </span>
+		 	  	  <b></b>
+		 	  	  <ul>
+		 	  	  	  <li>
+		 	  	  	  	  <a herf="#">狗狗主粮</a>
+		 	  	  	  	  <em class="gnum">2024</em>
+		 	  	  	  </li>
+		 	  	  	  <li>
+		 	  	  	  	  <a herf="#">狗狗零食</a>
+		 	  	  	  	  <em class="gnum">2744</em>
+		 	  	  	  </li>
+		 	  	  	  <li>
+		 	  	  	  	  <a herf="#">狗狗日用</a>
+		 	  	  	  	  <em class="gnum">2793</em>
+		 	  	  	  </li>
+		 	  	  	  <li>
+		 	  	  	  	  <a herf="#">狗狗玩具</a>
+		 	  	  	  	  <em class="gnum">2007</em>
+		 	  	  	  </li>
+		 	  	  	  <li>
+		 	  	  	  	  <a herf="#">狗狗保健</a>
+		 	  	  	  	  <em class="gnum">767</em>
+		 	  	  	  </li>
+		 	  	  	  <li>
+		 	  	  	  	  <a herf="#">狗狗医疗</a>
+		 	  	  	  	  <em class="gnum">757</em>
+		 	  	  	  </li>
+		 	  	  	  <li>
+		 	  	  	  	  <a herf="#">狗狗服饰</a>
+		 	  	  	  	  <em class="gnum">3945</em>
+		 	  	  	  </li>
+		 	  	  	  <li>
+		 	  	  	  	  <a herf="#">狗狗牵引</a>
+		 	  	  	  	  <em class="gnum">2182</em>
+		 	  	  	  </li>
+		 	  	  	  <li>
+		 	  	  	  	  <a herf="#">狗狗美容</a>
+		 	  	  	  	  <em class="gnum">841</em>
+		 	  	  	  </li>
+		 	  	  	  <li>
+		 	  	  	  	  <a herf="#">狗狗香波</a>
+		 	  	  	  	  <em class="gnum">981</em>
+		 	  	  	  </li>
+		 	  	  	   <li>
+		 	  	  	  	  <a herf="#">狗狗书籍</a>
+		 	  	  	  	  <em class="gnum">54</em>
+		 	  	  	  </li>
+		 	  	  	   <li>
+		 	  	  	  	  <a herf="#">狗狗周边</a>
+		 	  	  	  	  <em class="gnum">100</em>
+		 	  	  	  </li>
+		 	  	  	   <li>
+		 	  	  	  	  <a herf="#">狗狗定制</a>
+		 	  	  	  	  <em class="gnum">76</em>
+		 	  	  	  </li>
+		 	  	  	  <li>
+		 	  	  	  	  <a herf="#">狗狗试用</a>
+		 	  	  	  	  <em class="gnum">8</em>
+		 	  	  	  </li>
+		 	  	  </ul>
+		 	  </div>
+		 	  <label></label>
+		 	  <div class="onav_cont">
+		 	  	  <span class="c666">
+		 	  	  	  进口狗粮
+		 	  	  	 <em class="gnum">973</em>
+		 	  	  </span>
+		 	  	  <b></b>
+		 	  	  <ul>
+		 	  	  	  <li>
+		 	  	  	  	  <a herf="#">国产狗粮</a>
+		 	  	  	  	  <em class="gnum">904</em>
+		 	  	  	  </li>
+		 	  	  	  <li>
+		 	  	  	  	  <a herf="#">散装狗粮</a>
+		 	  	  	  	  <em class="gnum">97</em>
+		 	  	  	  </li>
+		 	  	  	   <li>
+		 	  	  	  	  <a herf="#">处方狗粮</a>
+		 	  	  	  	  <em class="gnum">50</em>
+		 	  	  	  </li>
+		 	  	  	   <li>
+		 	  	  	  	  <a herf="#">精装试吃</a>
+		 	  	  	  </li>
+		 	  	  </ul>
+		 	  </div>
+		 </div>
+	</div>
+	<!--左侧推荐-->
+	<div class="w_main">
+		 <!--左侧分类显示-->
+		 <div class="gdclass">
+		 	 <h2>狗狗主粮</h2>
+		 	 <div class="gdclass_li">
+		 	 	  <a title="进口狗粮" href="#" class="hh">
+		 	 	  	   <img src="img/list/a2.jpg" style="width:30px;height:30px;"/>
+		 	 	  	   <span>
+			 	 	  	   	进口狗粮&nbsp;
+			 	 	  	   	<em class="c999">973</em>
+		 	 	  	   </span>
+		 	 	  </a>
+		 	 	  <a title="进口狗粮" href="#">
+		 	 	  	   <img src="img/list/a4.jpg" style="width:30px;height:30px;"/>
+		 	 	  	   <span>
+			 	 	  	     国产狗粮&nbsp;
+			 	 	  	   	<em class="c999">904</em>
+		 	 	  	   </span>
+		 	 	  </a>
+		 	 	  <a title="进口狗粮" href="#">
+		 	 	  	   <img src="img/list/a5.jpg" style="width:30px;height:30px;"/>
+		 	 	  	   <span>
+			 	 	  	   	散装狗粮&nbsp;
+			 	 	  	   	<em class="c999">97</em>
+		 	 	  	   </span>
+		 	 	  </a>
+		 	 	  <a title="进口狗粮" href="#">
+		 	 	  	   <img src="img/list/a6.jpg" style="width:30px;height:30px;"/>
+		 	 	  	   <span>
+			 	 	  	   	处方狗粮&nbsp;
+			 	 	  	   	<em class="c999">93</em>
+		 	 	  	   </span>
+		 	 	  </a>
+		 	 </div>
+		 </div>
+		 <!--公益品牌商-->
+         <div class="ta_barnds">
+         	 <div class="ta-barandstit">T·A公益品牌商</div>
+         	 <div class="ta_maquee" style="height:auto">
+         	 	 <ul class="ta_hh"style="height:auto">
+         	 	 	<li class="rela">
+         	 	 		<a href="#">
+         	 	 			<img src="img/list/a8.jpg"/>
+         	 	 			<div class="layer-000"></div>
+         	 	 			<p class="ftx">
+         	 	 				已捐助: ¥ 25000
+         	 	 				<b></b>
+         	 	 			</p>
+         	 	 		</a>
+         	 	 	</li>
+         	 	 	<li class="rela">
+         	 	 		<a href="#">
+         	 	 			<img src="img/list/a9.jpg"/>
+         	 	 			<div class="layer-000"></div>
+         	 	 			<p class="ftx">
+         	 	 				已捐助: ¥ 25000
+         	 	 				<b></b>
+         	 	 			</p>
+         	 	 		</a>
+         	 	 	</li>
+         	 	 	<li class="rela
+         	 	 	">
+         	 	 		<a href="#">
+         	 	 			<img src="img/list/a10.jpg"/>
+         	 	 			<div class="layer-000"></div>
+         	 	 			<p class="ftx">
+         	 	 				已捐助: ¥ 25000
+         	 	 				<b></b>
+         	 	 			</p>
+         	 	 		</a>
+         	 	 	</li>
+         	 	 </ul>
+         	 </div>
+         </div>
+         <!--预定按钮-->
+         <div class="box">
+         	 <span class="bold">未找到心仪的商品？</span>
+         	 <br>
+         	 <a href="#" class="sbtn">
+         	 	<span class="ttn">预定没有的商品</span>
+         	 </a>
+         </div>
+         <!--宠物相关知识-->
+         <div class="box2">
+         	 <h2>相关知识</h2>
+         	 <ul class="artlist">
+         	 	<li>
+         	 		<a href="#">
+         	 			<span class="cred">[护理篇] </span>
+         	 		</a>
+         	 		<a href="#">完美的被毛</a>
+         	 	</li>
+         	 	<li>
+         	 		<a href="#">
+         	 			<span class="cred">[营养篇]</span>
+         	 		</a>
+         	 		<a href="#">怀孕母犬的营养需求</a>
+         	 	</li>
+         	 	<li>
+         	 		<a href="#">
+         	 			<span class="cred">[营养篇]</span>
+         	 		</a>
+         	 		<a href="#">7岁后的变化</a>
+         	 	</li>
+         	 	<li>
+         	 		<a href="#">
+         	 			<span class="cred">[营养篇]</span>
+         	 		</a>
+         	 		<a href="#">狗粮的品质</a>
+         	 	</li>
+         	 	<li>
+         	 		<a href="#">
+         	 			<span class="cred">[生理篇]</span>
+         	 		</a>
+         	 		<a href="#">内部结构</a>
+         	 	</li>
+         	 	<li>
+         	 		<a href="#">
+         	 			<span class="cred">[生理篇]</span>
+         	 		</a>
+         	 		<a href="#">脂肪</a>
+         	 	</li>
+         	 	<li>
+         	 		<a href="#">
+         	 			<span class="cred">[营养篇]</span>
+         	 		</a>
+         	 		<a href="#">怀孕母犬的营养补充</a>
+         	 	</li>
+         	 	<li>
+         	 		<a href="#">
+         	 			<span class="cred">[生理篇]</span>
+         	 		</a>
+         	 		<a href="#">孕期的开始</a>
+         	 	</li>
+         	
+         	 </ul>
+         </div>
+	</div>
+	<!--商品列表-->
+	<div class="w_mid">
+		 <!--筛选项-->
+		 <div class="bgate">
+		 	  <table cellpadding="0" cellspacing="0" width="100%">
+		 	  	   <tr>
+		 	  	   	   <th>品牌：</th>                 
+		 	  	   
+	                   <td>
+				 	  	   <div class="relas">
+		                       	<div class="fillayer">
+		                       		 <input type="text" class="brand_search" placeholder="可输入品牌名称查找">
+		                       		 <ul class="filnav">
+		                       		 	 <li class="letter_all hov">
+		                       		 	 	 所有品牌
+		                       		 	 	 <span></span>
+		                       		 	 </li>
+		                       		 	 <li class="letter_A">
+		                       		 	 	 A
+		                       		 	 	 <span></span>
+		                       		 	 </li>
+		                       		 	 <li class="letter_B ">
+		                       		 	 	 B
+		                       		 	 	 <span></span>
+		                       		 	 </li>
+		                       		 	 <li class="letter_C">
+		                       		 	 	 C
+		                       		 	 	 <span></span>
+		                       		 	 </li>
+		                       		 	 <li class="letter_D">
+		                       		 	 	 D
+		                       		 	 	 <span></span>
+		                       		 	 </li>
+		                       		 	 <li class="letter_E">
+		                       		 	 	 E
+		                       		 	 	 <span></span>
+		                       		 	 </li>
+		                       		 	 <li class="letter_F">
+		                       		 	 	 F
+		                       		 	 	 <span></span>
+		                       		 	 </li>
+		                       		 	 <li class="letter_G">
+		                       		 	 	 G
+		                       		 	 	 <span></span>
+		                       		 	 </li>
+		                       		 	 <li class="letter_H ">
+		                       		 	 	 H
+		                       		 	 	 <span></span>
+		                       		 	 </li>
+		                       		 	 <li class="letter_J ">
+		                       		 	 	 J
+		                       		 	 	 <span></span>
+		                       		 	 </li>
+		                       		 	 <li class="letter_K">
+		                       		 	 	 K
+		                       		 	 	 <span></span>
+		                       		 	 </li>
+		                       		 	 <li class="letter_L">
+		                       		 	 	 L
+		                       		 	 	 <span></span>
+		                       		 	 </li>
+		                       		 	 <li class="letter_M ">
+		                       		 	 	 M
+		                       		 	 	 <span></span>
+		                       		 	 </li>
+		                       		 	 <li class="letter_N">
+		                       		 	 	 N
+		                       		 	 	 <span></span>
+		                       		 	 </li>
+		                       		 	 <li class="letter_O">
+		                       		 	 	 O
+		                       		 	 	 <span></span>
+		                       		 	 </li>
+		                       		 	 <li class="letter_P">
+		                       		 	 	 P
+		                       		 	 	 <span></span>
+		                       		 	 </li>
+
+		                       		 	 
+		                       		 	 <li class="letter_S">
+		                       		 	 	 S
+		                       		 	 	 <span></span>
+		                       		 	 </li>
+		                       		 	 <li class="letter_T">
+		                       		 	 	 T
+		                       		 	 	 <span></span>
+		                       		 	 </li>
+		                       		 	 <li class="letter_W">
+		                       		 	 	 W
+		                       		 	 	 <span></span>
+		                       		 	 </li>
+		                       		 	 <li class="letter_X">
+		                       		 	 	 X
+		                       		 	 	 <span></span>
+		                       		 	 </li>
+		                       		 	 <li class="letter_Y">
+		                       		 	 	 Y
+		                       		 	 	 <span></span>
+		                       		 	 </li>
+		                       		 	 <li class="letter_Z">
+		                       		 	 	 Z
+		                       		 	 	 <span></span>
+		                       		 	 </li>
+		                       		 </ul>
+		                       	</div>
+		                       	<div class="filterBrder" style="height:196px;padding-bottom:1px;overflow:auto;">
+		                       		<div class="fil_con">
+		                       			<div class="filBlock">
+		                       				<div class="fil_li">
+		                       					<a href="#" class="ahov">
+		                       						<span>全部</span>
+		                       					</a>
+		                       				</div>
+		                       				<div class="fil_li">
+		                       					<a href="#" class="">
+		                       						<span>爱诺Eminent</span>
+		                       					</a>
+		                       				</div>
+		                       				<div class="fil_li">
+		                       					<a href="#" class="">
+		                       						<span>AATU</span>
+		                       					</a>
+		                       				</div>
+		                       				<div class="fil_li">
+		                       					<a href="#" class="">
+		                       						<span>安娜玛特Annamaet</span>
+		                       					</a>
+		                       				</div>
+		                       				<div class="fil_li">
+		                       					<a href="#" class="">
+		                       						<span>爱肯拿Acana</span>
+		                       					</a>
+		                       				</div>
+		                       				<div class="fil_li">
+		                       					<a href="#" class="">
+		                       						<span>Addiction</span>
+		                       					</a>
+		                       				</div>
+		                       				<div class="fil_li">
+		                       					<a href="#" class="">
+		                       						<span>爱邦Earthborn</span>
+		                       					</a>
+		                       				</div>
+		                       				<div class="fil_li">
+		                       					<a href="#" class="">
+		                       						<span>奥运宝Oven-Baked</span>
+		                       					</a>
+		                       				</div>
+		                       				<div class="fil_li">
+		                       					<a href="#" class="">
+		                       						<span>百娜绮 BY NATURE</span>
+		                       					</a>
+		                       				</div>
+		                       				<div class="fil_li">
+		                       					<a href="#" class="">
+		                       						<span>巴西淘淘力派</span>
+		                       					</a>
+		                       				</div>
+		                       				<div class="fil_li">
+		                       					<a href="#" class="">
+		                       						<span>佰芙</span>
+		                       					</a>
+		                       				</div>
+		                       				<div class="fil_li">
+		                       					<a href="#" class="">
+		                       						<span>百利本能</span>
+		                       					</a>
+		                       				</div>
+		                       				<div class="fil_li">
+		                       					<a href="#" class="">
+		                       						<span>Barking Heads</span>
+		                       					</a>
+		                       				</div>
+		                       				<div class="fil_li">
+		                       					<a href="#" class="">
+		                       						<span>超越Zignature</span>
+		                       					</a>
+		                       				</div>
+		                       				<div class="fil_li">
+		                       					<a href="#" class="">
+		                       						<span>巅峰ZiwiPeak</span>
+		                       					</a>
+		                       				</div>
+		                       				<div class="fil_li">
+		                       					<a href="#" class="">
+		                       						<span>枫树大道Maples</span>
+		                       					</a>
+		                       				</div>
+		                       				<div class="fil_li">
+		                       					<a href="#" class="">
+		                       						<span>福摩Fromm</span>
+		                       					</a>
+		                       				</div>
+		                       				<div class="fil_li">
+		                       					<a href="#" class="">
+		                       						<span>福到Friend Baby</span>
+		                       					</a>
+		                       				</div>
+		                       				<div class="fil_li">
+		                       					<a href="#" class="">
+		                       						<span>GO</span>
+		                       					</a>
+		                       				</div>
+		                       				<div class="fil_li">
+		                       					<a href="#" class="">
+		                       						<span>贵族Natures Gift</span>
+		                       					</a>
+		                       				</div>
+		                       				<div class="fil_li">
+		                       					<a href="#" class="">
+		                       						<span>活力家Sportmix</span>
+		                       					</a>
+		                       				</div>
+		                       				<div class="fil_li">
+		                       					<a href="#" class="">
+		                       						<span>黑鹰Black Hawk</span>
+		                       					</a>
+		                       				</div>
+		                       				<div class="fil_li">
+		                       					<a href="#" class="">
+		                       						<span>荒野盛宴</span>
+		                       					</a>
+		                       				</div>
+		                       				<div class="fil_li">
+		                       					<a href="#" class="">
+		                       						<span>海洋之星Fish4Dogs</span>
+		                       					</a>
+		                       				</div>
+		                       				<div class="fil_li">
+		                       					<a href="#" class="">
+		                       						<span>金字塔Tuscan</span>
+		                       					</a>
+		                       				</div>
+		                       				<div class="fil_li">
+		                       					<a href="#" class="">
+		                       						<span>极誉Best Breed</span>
+		                       					</a>
+		                       				</div>
+		                       				<div class="fil_li">
+		                       					<a href="#" class="">
+		                       						<span>家比乐</span>
+		                       					</a>
+		                       				</div>
+		                       				<div class="fil_li">
+		                       					<a href="#" class="">
+		                       						<span>渴望</span>
+		                       					</a>
+		                       				</div>
+		                       				<div class="fil_li">
+		                       					<a href="#" class="">
+		                       						<span>K9Natural</span>
+		                       					</a>
+		                       				</div>
+		                       				<div class="fil_li">
+		                       					<a href="#" class="">
+		                       						<span>卡比CANIDAE</span>
+		                       					</a>
+		                       				</div>
+		                       				<div class="fil_li">
+		                       					<a href="#" class="">
+		                       						<span>凌采EVO</span>
+		                       					</a>
+		                       				</div>
+		                       				<div class="fil_li">
+		                       					<a href="#" class="">
+		                       						<span>LINGDOK</span>
+		                       					</a>
+		                       				</div>
+		                       				<div class="fil_li">
+		                       					<a href="#" class="">
+		                       						<span>美国奇迹Ultramix</span>
+		                       					</a>
+		                       				</div>
+		                       				<div class="fil_li">
+		                       					<a href="#" class="">
+		                       						<span>麦可维MAX</span>
+		                       					</a>
+		                       				</div>
+
+		                       				<div class="fil_li">
+		                       					<a href="#" class="">
+		                       						<span>美士</span>
+		                       					</a>
+		                       				</div>
+		                       				<div class="fil_li">
+		                       					<a href="#" class="">
+		                       						<span>莫兰多</span>
+		                       					</a>
+		                       				</div>
+		                       				<div class="fil_li">
+		                       					<a href="#" class="">
+		                       						<span>麻利Merrick</span>
+		                       					</a>
+		                       				</div>
+		                       				<div class="fil_li">
+		                       					<a href="#" class="">
+		                       						<span>NOW FRESH</span>
+		                       					</a>
+		                       				</div>
+		                       				<div class="fil_li">
+		                       					<a href="#" class="">
+		                       						<span>诺为 NORTHWEST</span>
+		                       					</a>
+		                       				</div>
+		                       				<div class="fil_li">
+		                       					<a href="#" class="">
+		                       						<span>牛油果AVODerm</span>
+		                       					</a>
+		                       				</div>
+
+		                       				<div class="fil_li">
+		                       					<a href="#" class="">
+		                       						<span>耐吉斯</span>
+		                       					</a>
+		                       				</div>
+		                       	
+		                       				<div class="fil_li">
+		                       					<a href="#" class="">
+		                       						<span>欧奇斯Organix</span>
+		                       					</a>
+		                       				</div>
+		                       				<div class="fil_li">
+		                       					<a href="#" class="">
+		                       						<span>澳维加OZVIC</span>
+		                       					</a>
+		                       				</div>
+
+		                       				<div class="fil_li">
+		                       					<a href="#" class="">
+		                       						<span>欧帝亿</span>
+		                       					</a>
+		                       				</div>
+		                       				<div class="fil_li">
+		                       					<a href="#" class="">
+		                       						<span>派斯宝</span>
+		                       					</a>
+		                       				</div>
+
+		                       				<div class="fil_li">
+		                       					<a href="#" class="">
+		                       						<span>顶尖PINNACLE</span>
+		                       					</a>
+		                       				</div>
+		                       				<div class="fil_li">
+		                       					<a href="#" class="">
+		                       						<span>益生菌ProBioticLIVE</span>
+		                       					</a>
+		                       				</div>
+		                       				<div class="fil_li">
+		                       					<a href="#" class="">
+		                       						<span>普卡ProPac</span>
+		                       					</a>
+		                       				</div>
+		                       				<div class="fil_li">
+		                       					<a href="#" class="">
+		                       						<span>森美Summit</span>
+		                       					</a>
+		                       				</div>
+		                       				<div class="fil_li">
+		                       					<a href="#" class="">
+		                       						<span>素力高Solid Gold</span>
+		                       					</a>
+		                       				</div>
+
+		                       				<div class="fil_li">
+		                       					<a href="#" class="">
+		                       						<span>塔狮 Tiernitos</span>
+		                       					</a>
+		                       				</div>
+		                       				<div class="fil_li">
+		                       					<a href="#" class="">
+		                       						<span>维采 Vets Choice</span>
+		                       					</a>
+		                       				</div>
+		                       				<div class="fil_li">
+		                       					<a href="#" class="">
+		                       						<span>沃格Wagg</span>
+		                       					</a>
+		                       				</div>
+		                       				<div class="fil_li">
+		                       					<a href="#" class="">
+		                       						<span>威索wysong</span>
+		                       					</a>
+		                       				</div>
+		                       				<div class="fil_li">
+		                       					<a href="#" class="">
+		                       						<span>维洛司VeRUS</span>
+		                       					</a>
+		                       				</div>
+		                       				<div class="fil_li">
+		                       					<a href="#" class="">
+		                       						<span>Wellness</span>
+		                       					</a>
+		                       				</div>
+		                       				<div class="fil_li">
+		                       					<a href="#" class="">
+		                       						<span>希尔斯</span>
+		                       					</a>
+		                       				</div>
+		                       				<div class="fil_li">
+		                       					<a href="#" class="">
+		                       						<span>天衡宝（原雪山）</span>
+		                       					</a>
+		                       				</div>
+		                       				<div class="fil_li">
+		                       					<a href="#" class="">
+		                       						<span>伊凡斯Evangers</span>
+		                       					</a>
+		                       				</div>
+		                       				<div class="fil_li">
+		                       					<a href="#" class="">
+		                       						<span>雅美特</span>
+		                       					</a>
+		                       				</div>
+		                       				<div class="fil_li">
+		                       					<a href="#" class="">
+		                       						<span>营佳NutriEdge</span>
+		                       					</a>
+		                       				</div>
+		                       				<div class="fil_li">
+		                       					<a href="#" class="">
+		                       						<span>原之选Canagan</span>
+		                       					</a>
+		                       				</div>
+		                       				<div class="fil_li">
+		                       					<a href="#" class="">
+		                       						<span>壹之选1st Choice</span>
+		                       					</a>
+		                       				</div>
+		                       				<div class="fil_li">
+		                       					<a href="#" class="">
+		                       						<span>鱼子酱Canine Caviar</span>
+		                       					</a>
+		                       				</div>
+		                       				<div class="fil_li">
+		                       					<a href="#" class="">
+		                       						<span>Zeal</span>
+		                       					</a>
+		                       				</div>
+		                       				<div class="fil_li">
+		                       					<a href="#" class="">
+		                       						<span>Zeal</span>
+		                       					</a>
+		                       				</div>
+
+		                       			</div>
+		                       		</div>
+		                       	</div>
+		                       	<div class="fil_more">
+		                       		 <span class="more_down">
+		                       		 	 <b></b>
+		                       		 	 <i>更多</i>
+		                       		 </span>
+		                       	</div>
+		                   </div>
+	                   </td> 
+                   </tr>
+                   <!--拓展属性-->
+                   <tr>
+                   	   <th>年龄：</th>
+                   	   <td>
+                   	   	   <a href="#">
+                   	   	   	   <span>全部</span>
+                   	   	   </a>
+                   	   	   <a href="#" class="ahov">
+                   	   	   	   <span>全犬期</span>
+                   	   	   </a>
+                   	   	   <a href="#">
+                   	   	   	   <span>幼犬期</span>
+                   	   	   </a>
+                   	   	   <a href="#">
+                   	   	   	   <span>成犬期</span>
+                   	   	   </a>
+                   	   	   <a href="#">
+                   	   	   	   <span>离乳&怀孕哺乳期 </span>
+                   	   	   </a>
+                   	   	   <a href="#">
+                   	   	   	   <span>老犬期（低热量/减肥）</span>
+                   	   	   </a>
+                   	   </td>
+
+                   </tr> 
+                   <tr>
+                   	   <th>体型：</th>
+                   	   <td>
+                   	   	   <a href="#">
+                   	   	   	   <span>全部</span>
+                   	   	   </a>
+                   	   	   <a href="#" class="ahov">
+                   	   	   	   <span>小型犬</span>
+                   	   	   </a>
+                   	   	   <a href="#">
+                   	   	   	   <span>中大型犬</span>
+                   	   	   </a>
+                   	   	   <a href="#">
+                   	   	   	   <span>全体型</span>
+                   	   	   </a>
+                   	   </td>
+                   	   
+                   </tr>
+                   <tr>
+                   	   <th>颗粒大小：</th>
+                   	   <td>
+                   	   	   <a href="#">
+                   	   	   	   <span>全部</span>
+                   	   	   </a>
+                   	   	   <a href="#" class="ahov">
+                   	   	   	   <span>小颗粒</span>
+                   	   	   </a>
+                   	   	   <a href="#">
+                   	   	   	   <span>标准粒</span>
+                   	   	   </a>
+                   	   	   <a href="#">
+                   	   	   	   <span>大颗粒</span>
+                   	   	   </a>
+                   	   </td>
+                   	   
+                   </tr> 
+                   <tr>
+                   	   <th>均价：</th>
+                   	   <td>
+                   	   	   <a href="#">
+                   	   	   	   <span>全部</span>
+                   	   	   </a>
+                   	   	   <a href="#" class="ahov">
+                   	   	   	   <span>10元以下</span>
+                   	   	   </a>
+                   	   	   <a href="#">
+                   	   	   	   <span>10.1-15元/斤</span>
+                   	   	   </a>
+                   	   	   <a href="#">
+                   	   	   	   <span>15.1-20元/斤</span>
+                   	   	   </a>
+                   	   	   <a href="#">
+                   	   	   	   <span>20.1-25元/斤</span>
+                   	   	   </a>
+                   	   	   <a href="#">
+                   	   	   	   <span>25.1-30元/斤</span>
+                   	   	   </a>
+                   	   	   <a href="#">
+                   	   	   	   <span>30.1-40元/斤</span>
+                   	   	   </a>
+                   	   	   <a href="#">
+                   	   	   	   <span>40.1-50元/斤</span>
+                   	   	   </a>
+                   	   	   <a href="#">
+                   	   	   	   <span>50.1元以上/斤</span>
+                   	   	   </a>
+                   	   </td>
+                   	   
+                   </tr> 
+                     <tr>
+                   	   <th>重量：</th>
+                   	   <td>
+                   	   	   <a href="#">
+                   	   	   	   <span>全部</span>
+                   	   	   </a>
+                   	   	   <a href="#" class="ahov">
+                   	   	   	   <span>超小包（1.5kg以下）</span>
+                   	   	   </a>
+                   	   	   <a href="#">
+                   	   	   	   <span>小包（1.5-5kg）</span>
+                   	   	   </a>
+                   	   	   <a href="#">
+                   	   	   	   <span>中包（5.1-10kg）</span>
+                   	   	   </a>
+                   	   	   <a href="#">
+                   	   	   	   <span>大包（10.1-15kg）</span>
+                   	   	   </a>
+                   	   	   <a href="#">
+                   	   	   	   <span>超大包（15kg以上）</span>
+                   	   	   </a>
+                   	   </td>
+                   	   
+                   </tr> 
+                   <tr>
+                   	   <th>主要配方：</th>
+                   	   <td>
+                   	   	   <a href="#">
+                   	   	   	   <span>全部</span>
+                   	   	   </a>
+                   	   	   <a href="#" class="ahov">
+                   	   	   	   <span>火鸡肉</span>
+                   	   	   </a>
+                   	   	   <a href="#">
+                   	   	   	   <span>鸡肉</span>
+                   	   	   </a>
+                   	   	   <a href="#">
+                   	   	   	   <span>牛肉</span>
+                   	   	   </a>
+                   	   	   <a href="#">
+                   	   	   	   <span>羊肉</span>
+                   	   	   </a>
+                   	   	   <a href="#">
+                   	   	   	   <span>鱼肉</span>
+                   	   	   </a>
+                   	   	   <a href="#">
+                   	   	   	   <span>鸭肉</span>
+                   	   	   </a>
+                   	   	   <a href="#">
+                   	   	   	   <span>鹿肉</span>
+                   	   	   </a>
+                   	   	   <a href="#">
+                   	   	   	   <span>其它</span>
+                   	   	   </a>
+                   	   </td>
+                   	   
+                   </tr> 
+		 	  </table>
+		 </div>
+		 <!--排序筛选项-->
+		 <div class="gdmunu_out">
+		 	 <div id="gdmenu">
+		 	 	 <div class="lis_pl">
+		 	 	 	 <div class="lis_pll">
+		 	 	 	 	 <a href="#">
+		 	 	 	 	 	 <span >默认</span>
+		 	 	 	 	 </a>
+		 	 	 	 	 <a href="#">
+		 	 	 	 	 	 <span >销量</span>
+		 	 	 	 	 </a>
+		 	 	 	 	 <a href="#">
+		 	 	 	 	 	 <span class="">人气</span>
+		 	 	 	 	 </a>
+		 	 	 	 	 <a href="#">
+		 	 	 	 	 	 <span class="">新品</span>
+		 	 	 	 	 </a>
+		 	 	 	 	 <a href="#">
+		 	 	 	 	 	 <span class="">评论</span>
+		 	 	 	 	 </a>
+		 	 	 	 	 <a href="#" class="pxprice">
+		 	 	 	 	 	 <span >价格</span>
+		 	 	 	 	 </a>
+		 	 	 	 </div>
+		 	 	 	 <div class="lis_plr">
+		 	 	 	 	 <a href="#javascript">下一页</a>
+		 	 	 	 	 <a href="#javascript" class="c999">上一页</a>
+		 	 	 	 	 <span class="fr">1/8</span>
+		 	 	 	 	 <span class="mr">
+			 	 	 	 	 	共找到
+			 	 	 	 	 	<span class="cred">
+			 	 	 	 	 		443
+			 	 	 	 	 	</span>
+			 	 	 	 	 	件商品
+		 	 	 	 	 </span>
+		 	 	 	 </div>
+		 	 	 </div>
+		 	 </div>
+		 	 <!--收货地址选择-->
+		 	 <div class="sent_city">
+		 	 	 <div class="divsent_city clearfix">
+		 	 	 	 <span class="fl">送货至：</span>
+		 	 	 	 <div class="list_place_div">
+		 	 	 	 	 <div class="place_div">
+		 	 	 	 	 	  <div class="mt5">
+		 	 	 	 	 	  	  <div class="clearfix place_str">
+		 	 	 	 	 	  	  	   重庆 重庆 渝中区
+		 	 	 	 	 	  	  </div>
+		 	 	 	 	 	  	  <b></b>
+		 	 	 	 	 	  </div>
+		 	 	 	 	 </div>
+		 	 	 	 </div>
+		 	 	 </div>
+		 	 	 <div class="paixu">
+		 	 	 	 <a href="#">
+		 	 	 	 	 <span class="instock">
+		 	 	 	 	 	  <div class="fl checkBox " style="margin: 20px 5px 0 10px;"></div>
+		 	 	 	 	 	  只显示有货
+		 	 	 	 	 </span>
+		 	 	 	 </a>
+		 	 	 	 <a href="#">
+		 	 	 	 	 <span class="liebiao">列表显示</span>
+		 	 	 	 </a>
+		 	 	 </div>
+		 	 </div>
+		 </div>
+		 <!--商品矩阵排列-->
+		 <div class="clearfix glist_1">
+		 </div>
+		 <div id="Pagination" class="pagination">
+		 	<span></span>
+		 </div>
+	</div>
+
+</div>
+	<div id="footer"></div>
+	<div id="dialog clearfix">
+
+</div>
+<div class="fixd bgwh dia-con">
+    <i class="fl dib"><img src="img/list/c1.jpg"></i>
+    <div class="fl ml20">
+        <p class=" lh24 ft12">恭喜，已成功添加到购物车！</p>
+        <p class=" lh24 ft12">购物车共有 <i class="cred" id="goodsl">7</i> 件商品，合计：<i class="cred ft18"
+                                                                                id="goodscont">254.40元</i></p>
+        <div style="padding-top: 10px;">
+            <a href="javascript:;" id="dia-conti" class="mr btn"><span>继续购物</span></a>
+            <a href="javascript:;" id="dia-submi" class="smbtn"><span>立即结算</span></a>
+        </div>
+    </div>
+</div>
+</body>
+ <script src="js/list.js"></script>
+ <script src="js/com.js"></script>
+ <script src="js/cart.js"></script>
+</html>

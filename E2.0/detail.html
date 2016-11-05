@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>商品详情页</title>
+	<link rel="stylesheet" style="text/css" href="css/reset.css"/>
+	<link rel="stylesheet" style="text/css" href="css/detail.css"/>
+	<script src="js/jquery-1.11.3.js"></script>
+	<script src="js/detail.js"></script>
+	<script src="js/jquery.cookie.js"></script>
+	<script src="js/cart.js"></script>
+</head>
+<body>
+	<div id="head"></div>
+	<div class="w_max">
+		<!--保税直邮商品-->
+		<div class="xq_first">
+			 <div class="xq_title">
+			 	 <div class="xq_name">
+			 	 	 <h1 class="ft18">
+			 	 	 	 <span class="cred">[多件优惠]</span>
+                                美国原装进口天衡宝（原雪山）限定系列 鸭薯配方小型犬粮 4.5磅/2.04kg            
+			 	 	 </h1>
+			 	 	 <p class="ft14">中国B2C平台战略合作伙伴 无谷天然粮 告别敏感泪痕烦恼 小型犬专用</p>
+			 	 </div>
+			 </div>
+			 <div class="xq_con">
+			 	 <div class=" xq_img">
+			 	 	 <!--图片放大镜 开始-->
+			 	 	 <div class="clearfix Dimg">
+			 	 	 	 <!--缩图开始-->
+			 	 	 	 <div class="spec_scroll">
+			 	 	 	 	 <a href="#" class="prev">
+			 	 	 	 	 	 <i></i>
+			 	 	 	 	 </a>
+			 	 	 	 	 <div class="items">
+			 	 	 	 	 	<ul>
+			 	 	 	 	 		<li class="onclickImg">
+			 	 	 	 	 			 <img src="img/detail/a79.jpg"/>
+			 	 	 	 	 		</li>
+			 	 	 	 	 	<ul>
+			 	 	 	 	 </div>
+			 	 	 	 	 <a href="#" class="next">
+			 	 	 	 	 	<i></i>
+			 	 	 	 	 </a>
+			 	 	 	 </div>
+			 	 	 	 <!--缩图结束-->
+			 	 	 	 <div class="preview">
+			 	 	 	 	<div class="big_img">
+			 	 	 	 		<span class="jqzoom">
+			 	 	 	 			<div class="mark_box"></div>
+			 	 	 	 			<img src="img/detail/a79.jpg" style="width:400px;
+			 	 	 	 			height:400px;"/>
+			 	 	 	 			<div class="position_box"></div>
+			 	 	 	 		</span>
+			 	 	 	 	</div>
+			 	 	 	 </div>
+			 	 	 	 <div class="b_box">
+			 	 	 	 	<div class="b_box_all">
+			 	 	 	 		<img src="img/detail/a79.jpg"/>
+			 	 	 	 	</div>
+			 	 	 	 </div>
+			 	 	 	 <div class="clear"></div>
+			 	 	 </div>
+
+			 	 	 <!--图片放大镜结束-->
+			 	 	 <div class="clearfix  c99">
+			 	 	 	 <span class="fl">商品编号：110072</span>
+			 	 	 	 <div class="xp_share">
+			 	 	 	 	 <div class="share_icon">
+			 	 	 	 	 	 <span class="xqico">分享</span>
+			 	 	 	 	 </div>
+			 	 	 	 	 <a href="#" class="icqo">收藏商品</a>
+			 	 	 	 </div>
+			 	 	 </div>
+			 	 </div>
+			 	 <div class="xq_intro">
+			 	 	  <!--直邮保税图标-->
+			 	 	   <div class="goods_icon">
+			 	 	   	  <img src="img/detail/a5.png"/>
+			 	 	   </div>
+			 	 	   <div class="clearfix this_price">
+			 	 	   	   <b class="fl">￥</b>
+			 	 	   	   <big class="fl bold">165.00</big>
+                           <span class="fl ml">包邮免税</span>
+                           <em class="mt20" id="price0">
+                                市场价：¥198.00 
+                                             
+                           </em>
+			 	 	   </div>
+			 	 	   <!--税费，邮费-->
+			 	 	   <div class="clearfix other_money">
+			 	 	   	    <div class="point">
+			 	 	   	    	税费
+			 	 	   	    	<del class="c333">￥15.01</del>
+			 	 	   	    	<b class="dib"></b>
+			 	 	   	    </div>
+			 	 	   	    <div class="point">
+			 	 	   	    	 邮费
+			 	 	   	    	 <del class="c333">￥40.12</del>
+			 	 	   	    	 <b class="dib"></b>
+			 	 	   	    </div>
+			 	 	   </div>
+			 	 	   <!--规格-->
+			 	 	   <div class="clearfix norms">
+			 	 	   	   <span class="db">重量：</span>
+			 	 	   	   <div class="norms_con">
+			 	 	   	   	    <a href="#" class="norms_a">
+			 	 	   	   	    	4.5磅
+			 	 	   	   	    	<span class="goods-select"></span>
+			 	 	   	   	    </a>
+			 	 	   	   	     <a href="#" class="norms_a nostock">
+			 	 	   	   	    	12磅
+			 	 	   	   	    </a>
+			 	 	   	   </div>
+			 	 	   </div>
+			 	 	   <div class="clearfix morms">
+			 	 	   	   <span class="mt5">数量：</span>
+			 	 	   	   <div class="norms_con">
+			 	 	   	   	   <span class="cgnum">
+			 	 	   	   	   	   <span class="chgnum">-</span>
+			 	 	   	   	   	   <input type="text" id="cart_buynum"value="1"/>
+			 	 	   	   	   	   <span class="add_buynum">+</span>
+			 	 	   	   	   </span>
+			 	 	   	   	   <span class="mt">袋</span>
+			 	 	   	   </div>
+			 	 	   </div>
+			 	 	   <!--多件优惠-->
+			 	 	   <div class="clearfix gdtable">
+			 	 	   	  <span class="c999" style="padding:0; margin:0;">买多件：</span>
+                          <div class="norms_con">
+                          	   <dl class="multioffer">
+                          	   	   <dt class="cs_chks">
+                          	   	   	   <p>
+                          	   	   	   	  <input type="radio" class="multibuy" checked="checked"/>
+                          	   	   	   	  <label>
+                          	   	   	   	  	  买 2 袋，9.5折，单价：
+                          	   	   	   	  	  <span class="price">￥ 156.75</span>
+
+                          	   	   	   	  </label>
+                          	   	   	   </p>
+                          	   	   	   <p id="lim_price">
+                          	   	   	   	   可节省
+                          	   	   	   	   <span class="price">￥ 16.50</span>
+                          	   	   	   </p>
+                          	   	   </dt>
+                          	   </dl>
+                          </div>
+			 	 	   </div>
+			 	 	   <!--发货地址-->
+			 	 	   <div class="clearfix norms">
+			 	 	   	   <span class="c999" style="margin:0;padding:0">发货：</span>
+			 	 	   	   <div class="norms_con">
+			 	 	   	   	  <div class="sent_city">
+			 	 	   	   	  	  <div class="clearfix">
+			 	 	   	   	  	  	  <div class="clearfix div_centcity">
+			 	 	   	   	  	  	  	  <em class="c333 fl">香港1号仓</em>
+			 	 	   	   	  	  	  </div>
+			 	 	   	   	  	  </div>
+			 	 	   	   	  	  <div class="c999" style="margin-top:13px;padding:0">
+			 	 	   	   	  	  	  因跨境直邮政策调整，宠物食品亦受清关影响，下单后实际到货时间暂时无法确定。运费详情>>
+			 	 	   	   	  	  </div>
+			 	 	   	   	  </div>
+			 	 	   	   </div>
+			 	 	   </div>
+			 	 	   <!--已买人数，评论-->
+			 	 	    <div class="had_buy">
+			 	 	    	 <ul clear="clearfix">
+			 	 	    	 	 <li class="ftc1">
+			 	 	    	 	 	 <span>
+			 	 	    	 	 	 	 <i class="ico_1"></i>
+			 	 	    	 	 	 	 已购买人数12483
+			 	 	    	 	 	 </span>
+			 	 	    	 	 </li>
+			 	 	    	 	  <li class="ftc1">
+			 	 	    	 	 	 <span>
+			 	 	    	 	 	 	 <i class="ico_2"></i>
+			 	 	    	 	 	 	 4.8分 (3275条评论）
+			 	 	    	 	 	 </span>
+			 	 	    	 	 </li>
+			 	 	    	 	  <li class="ftc1" style="border:none">
+			 	 	    	 	 	 <span>
+			 	 	    	 	 	 	 <i class="ico_3"></i>
+			 	 	    	 	 	 	 最多42个E宠币
+			 	 	    	 	 	 </span>
+			 	 	    	 	 </li>
+			 	 	    	 </ul>
+			 	 	    </div>
+			 	 	    <div class="addbuy_btn">
+			 	 	    	 <span class="buy_btn">加入购物车</span>
+			 	 	    </div>
+			 	 </div>
+			 </div>
+		</div>
+		<!--下半部分-->
+		<div class="clearfix mt">
+			<!--详情内容-->
+			<div class="w_mid">
+			 	<div class="mult_tabs">
+			 		<a class="bgwh rep1">
+			 			<span class="ft14">商品详情</span>
+			 		</a>
+			 		<a  class=" rep2">
+			 			<span class="ft14">商品公告(1)</span>
+			 		</a>
+			 		<a  class="rep3">
+			 			<span class="ft14">评价(3275)</span>
+			 		</a>
+			 		<a  class="rep4">
+			 			<span class="ft14">咨询(6159)</span>
+			 		</a>
+			 		<a  class="rep5">
+			 			<span class="ft14">不一样的E宠</span>
+			 		</a>
+			 		<a  class="rep6">
+			 			<span class="ft14">香港直邮FAQ</span>
+			 		</a>
+			 		<a  class="genuine">
+			 			<ul class="clearfix this_brand">
+			 				<li class="f1 clearfix">
+			 					<i></i>
+			 					<span class="ftc">
+                                    授权文件
+                                </span>
+
+			 				</li>
+			 			</ul>			 			
+			 		</a>
+			 	</div>
+			 	<div class="mult_content">
+			 		 <!--商品介绍-->
+			 		 <div class="gd_details">
+			 		 	<!--品牌相关信息-->
+			 		 	 <div class="country_intro clearfix">
+			 		 	 	 <div class="America-bg"></div>
+			 		 	 	 <div class="brand_nimg">
+			 		 	 	 	 <a href="#">
+			 		 	 	 	 	<img src="img/detail/a9.jpg"/>
+			 		 	 	 	 </a>
+			 		 	 	 </div>
+			 		 	 	 <div class="brands_home">
+				 		 	 	 	<a href="#">
+				 		 	 	 		<span class="fontline">
+				 		 	 	 			天衡宝（原雪山）品牌馆
+				 		 	 	 		</span>
+				 		 	 	 	</a>
+				 		 	 	 	<span class="mr">|</span>
+				 		 	 	 	<a href="#">
+				 		 	 	 		<span class="fontline">
+				 		 	 	 			 美洲馆 · 美国
+				 		 	 	 		</span>
+				 		 	 	 	</a>
+				 		 	 	 	<!--品牌关注按钮-->
+				 		 	 	 	<a href="#" class="concern"></a>	 	 	 	
+			 		 	 	 </div>
+			 		 	 	 <div class="brands_place">
+			 		 	 	 	 <div class="texR">
+			 		 	 	 	 	<span class="c9">生产产地：</span>
+			 		 	 	 	 	美国
+			 		 	 	 	 </div>
+			 		 	 	 	 <div class="texR">
+			 		 	 	 	 	<span class="c9">品牌起源地：</span>
+			 		 	 	 	 	美国
+			 		 	 	 	 </div>
+			 		 	 	 </div>
+			 		 	 </div>
+			 		 	<div>
+			 		 	 	<div>
+			 		 	 		<img src="img/detail/a11.jpg"/>
+			 		 	 	</div>
+			 		 	 	
+			 		 	 	<div>
+			 		 	 		<img src="img/detail/a12.jpg"/>
+			 		 	 	</div>
+			 		 	 	<div>
+			 		 	 		<img src="img/detail/a13.jpg"/>
+			 		 	 	</div>
+
+			 		 	 	<div>
+			 		 	 		<img src="img/detail/a14.jpg"/>
+			 		 	 	</div>
+			 		 	 	<div>
+			 		 	 		<img src="img/detail/a15.jpg"/>
+			 		 	 	</div>
+			 		 	 	<div>
+			 		 	 		<img src="img/detail/a16.jpg"/>
+			 		 	 	</div>
+			 		 	 	<div>
+			 		 	 		<img src="img/detail/a17.jpg"/>
+			 		 	 	</div>
+
+			 		 	 	<div>
+			 		 	 		<img src="img/detail/a18.jpg"/>
+			 		 	 	</div>
+			 		 	 	<div>
+			 		 	 		<img src="img/detail/a19.jpg"/>
+			 		 	 	</div>
+			 		 	 	<div>
+			 		 	 		<img src="img/detail/a20.jpg"/>
+			 		 	 	</div>
+			 		 	 	<div>
+			 		 	 		<img src="img/detail/a21.jpg"/>
+			 		 	 	</div>
+
+			 		 	 	
+
+			 		 	 	<div>
+			 		 	 		<img src="img/detail/a22.jpg"/>
+			 		 	 	</div>
+			 		 	 	<div>
+			 		 	 		<img src="img/detail/a23.jpg"/>
+			 		 	 	</div>
+			 		 	 	<div>
+			 		 	 		<img src="img/detail/a24.jpg"/>
+			 		 	 	</div>
+			 		 	 	<div>
+			 		 	 		<img src="img/detail/a25.jpg"/>
+			 		 	 	</div>
+
+			 		 	 	<div>
+			 		 	 		<img src="img/detail/a26.jpg"/>
+			 		 	 	</div>
+			 		 	 	<div>
+			 		 	 		<img src="img/detail/a27.jpg"/>
+			 		 	 	</div>
+			 		 	 	<div>
+			 		 	 		<img src="img/detail/a28.jpg"/>
+			 		 	 	</div>
+			 		 	 	<div>
+			 		 	 		<img src="img/detail/a29.jpg"/>
+			 		 	 	</div>
+			 		 	 	<div>
+			 		 	 		<img src="img/detail/a30.jpg"/>
+			 		 	 	</div>
+
+			 		 	 	<div>
+			 		 	 		<img src="img/detail/a31.jpg"/>
+			 		 	 	</div>
+			 		 	 	<div>
+			 		 	 		<img src="img/detail/a32.jpg"/>
+			 		 	 	</div>
+			 		 	 	<div>
+			 		 	 		<img src="img/detail/a33.jpg"/>
+			 		 	 	</div>
+			 		 	 	<div>
+			 		 	 		<img src="img/detail/a34.jpg"/>
+			 		 	 	</div>
+
+			 		 	 	<div>
+			 		 	 		<img src="img/detail/a35.jpg"/>
+			 		 	 	</div>
+			 		 	 	<div>
+			 		 	 		<img src="img/detail/a36.jpg"/>
+			 		 	 	</div>
+			 		 	 	<div>
+			 		 	 		<img src="img/detail/a37.jpg"/>
+			 		 	 	</div>
+			 		 	 	<div>
+			 		 	 		<img src="img/detail/a38.jpg"/>
+			 		 	 	</div>
+			 		 	 	<div>
+			 		 	 		<img src="img/detail/a39.jpg"/>
+			 		 	 	</div>
+			 		 	 	<div>
+			 		 	 		<img src="img/detail/a40.jpg"/>
+			 		 	 	</div>
+			 		 	 	<div>
+			 		 	 		<img src="img/detail/a41.jpg"/>
+			 		 	 	</div>
+
+			 		 	 	<div>
+			 		 	 		<img src="img/detail/a42.jpg"/>
+			 		 	 	</div>
+			 		 	 	<div>
+			 		 	 		<img src="img/detail/a43.jpg"/>
+			 		 	 	</div>
+			 		 	 	<div>
+			 		 	 		<img src="img/detail/a44.jpg"/>
+			 		 	 	</div>
+			 		 	 	<div>
+			 		 	 		<img src="img/detail/a45.jpg"/>
+			 		 	 	</div>
+			 		 	 	<div>
+			 		 	 		<img src="img/detail/a46.jpg"/>
+			 		 	 	</div>
+                            <div>
+			 		 	 		<img src="img/detail/a47.jpg"/>
+			 		 	 	</div>
+			 		 	 	<div>
+			 		 	 		<img src="img/detail/a48.jpg"/>
+			 		 	 	</div>
+			 		 	 	<div>
+			 		 	 		<img src="img/detail/a49.jpg"/>
+			 		 	 	</div>
+			 		 	 	<div>
+			 		 	 		<img src="img/detail/a50.jpg"/>
+			 		 	 	</div>
+			 		 	 	<div>
+			 		 	 		<img src="img/detail/a51.jpg"/>
+			 		 	 	</div>
+			 		 	 	<div>
+			 		 	 		<img src="img/detail/a52.jpg"/>
+			 		 	 	</div>
+                            <div>
+			 		 	 		<img src="img/detail/a53.jpg"/>
+			 		 	 	</div>
+			 		 	 	<div>
+			 		 	 		<img src="img/detail/a54.jpg"/>
+			 		 	 	</div>
+			 		 	 	<div>
+			 		 	 		<img src="img/detail/a55.jpg"/>
+			 		 	 	</div>
+			 		 	 	<div>
+			 		 	 		<img src="img/detail/a56.jpg"/>
+			 		 	 	</div>
+			 		 	 	<div>
+			 		 	 		<img src="img/detail/a57.jpg"/>
+			 		 	 	</div>
+
+			 		 	 	<div>
+			 		 	 		<img src="img/detail/a58.jpg"/>
+			 		 	 	</div>
+			 		 	 	<div>
+			 		 	 		<img src="img/detail/a59.jpg"/>
+			 		 	 	</div>
+			 		 	 	<div>
+			 		 	 		<img src="img/detail/a60.jpg"/>
+			 		 	 	</div>
+			 		 	 	<div>
+			 		 	 		<img src="img/detail/a61.jpg"/>
+			 		 	 	</div>
+                            <div>
+			 		 	 		<img src="img/detail/a62.jpg"/>
+			 		 	 	</div>
+			 		 	 	<div>
+			 		 	 		<img src="img/detail/a63.jpg"/>
+			 		 	 	</div>
+			 		 	 	<div>
+			 		 	 		<img src="img/detail/a64.jpg"/>
+			 		 	 	</div>
+			 		 	 	<div>
+			 		 	 		<img src="img/detail/a65.jpg"/>
+			 		 	 	</div>
+			 		 	 	<div>
+			 		 	 		<img src="img/detail/a66.jpg"/>
+			 		 	 	</div>
+			 		 	 	<div>
+			 		 	 		<img src="img/detail/a67.jpg"/>
+			 		 	 	</div>
+			 		 	 	<div>
+			 		 	 		<img src="img/detail/a68.jpg"/>
+			 		 	 	</div>
+			 		 	 	<div>
+			 		 	 		<img src="img/detail/a69.jpg"/>
+			 		 	 	</div>
+			 		 	 	<div>
+			 		 	 		<img src="img/detail/a70.jpg"/>
+			 		 	 	</div>
+			 		 	 	<div>
+			 		 	 		<img src="img/detail/a71.jpg"/>
+			 		 	 	</div>
+			 		 	 	<div>
+			 		 		    <img src="img/detail/a72.png"/>
+			 		 	   </div>
+			 		 	</div>
+			 		 </div>
+			 	</div>
+			</div>
+			<!--侧边栏-->
+			<div class="hotproduce">
+				<h1 class="zcolor" style="line-height: 35px;">热卖单品</h1>
+				<ul class="hto_pro">
+					<li class="ftc">
+						 <a href="#">
+						 	<img src="img/detail/a73.jpg"/>
+						 	<div class="ftleft">
+						 		海洋之星 深海鱼幼犬粮 小颗粒 1.5k
+						 		<span class="cf60">￥140.00</span>
+						 	</div>
+						 </a>
+					</li>
+					<li class="ftc">
+						 <a href="#">
+						 	<img src="img/detail/a74.jpg"/>
+						 	<div class="ftleft">
+						 		牛油果AVODerm 鸡肉糙米配方成犬粮
+						 		<span class="cf60">￥538.00</span>
+						 	</div>
+						 </a>
+					</li>
+					<li class="ftc">
+						 <a href="#">
+						 	<img src="img/detail/a75.jpg"/>
+						 	<div class="ftleft">
+						 		Orijen渴望狗粮 六种鱼肉+美毛专用
+						 		<span class="cf60">￥155.00</span>
+						 	</div>
+						 </a>
+					</li>
+					<li class="ftc">
+						 <a href="#">
+						 	<img src="img/detail/a76.jpg"/>
+						 	<div class="ftleft">
+						 		美国卡比 全犬期原味配方狗粮 44磅(1)
+						 		<span class="cf60">￥618.00</span>
+						 	</div>
+						 </a>
+					</li>
+					<li class="ftc">
+						 <a href="#">
+						 	<img src="img/detail/a77.jpg"/>
+						 	<div class="ftleft">
+						 		美国原装进口天衡宝（原雪山）限定系列 鸭
+						 		<span class="cf60">￥165.00</span>
+						 	</div>
+						 </a>
+					</li>
+					<li class="ftc">
+						 <a href="#">
+						 	<img src="img/detail/a78.jpg"/>
+						 	<div class="ftleft">
+						 		枫树大道 枫糖浆金枪鱼紫薯全犬粮 2kg
+						 		<span class="cf60">￥150.00</span>
+						 	</div>
+						 </a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div id="footer"></div>
+		<div id="dialog clearfix">
+
+</div>
+<div class="fixd bgwh dia-con">
+    <i class="fl dib"><img src="img/list/c1.jpg"></i>
+    <div class="fl ml20">
+        <p class=" lh24 ft12">恭喜，已成功添加到购物车！</p>
+        <p class=" lh24 ft12">购物车共有 <i class="cred" id="goodsl">7</i> 件商品，合计：<i class="cred ft18"
+                                                                                id="goodscont">254.40元</i></p>
+        <div style="padding-top: 10px;">
+            <a href="javascript:;" id="dia-conti" class="mr btn"><span>继续购物</span></a>
+            <a href="javascript:;" id="dia-submi" class="smbtn"><span>立即结算</span></a>
+        </div>
+    </div>
+</div>
+</body>
+</html>
